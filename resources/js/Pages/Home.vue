@@ -3,7 +3,7 @@
     <div class="space-y-0">
       <!-- Hero: عرض كامل مع خلفية (بدون 100vw لتجنب التمرير الأفقي) -->
       <section
-        class="relative w-full overflow-hidden bg-gradient-to-b from-gray-50 to-white py-24 dark:bg-gray-900 sm:py-32"
+        class="relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 dark:bg-gray-900 sm:py-32"
       >
         <!-- دوائر زينة خلفية (مستوحى من الموقع المرجعي) -->
         <div
@@ -11,13 +11,13 @@
           aria-hidden="true"
         >
           <div
-            class="absolute -top-24 -end-24 h-96 w-96 rounded-full border border-primary-500/20"
+            class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border border-primary-500/20"
           />
           <div
-            class="absolute -bottom-24 -start-24 h-80 w-80 rounded-full border border-primary-400/20"
+            class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border border-primary-400/20"
           />
           <div
-            class="absolute start-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary-300/20"
+            class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary-300/20"
           />
         </div>
 

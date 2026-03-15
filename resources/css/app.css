@@ -7,17 +7,18 @@
 @source '../**/*.vue';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-cairo: 'Cairo', ui-sans-serif, system-ui, sans-serif;
+    --font-sans: var(--font-cairo), 'Cairo', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
-    /* Kandia Titi brand: blue/gold from presentation */
-    --color-primary-50: #eff6ff;
-    --color-primary-100: #dbeafe;
-    --color-primary-200: #bfdbfe;
-    --color-primary-300: #93c5fd;
-    --color-primary-400: #60a5fa;
-    --color-primary-500: #3b82f6;
-    --color-primary-600: #1d4ed8;
-    --color-primary-700: #1e40af;
-    --color-primary-800: #1e3a8a;
-    --color-primary-900: #1e3a8a;
+    /* اللون الأساسي: بيج/تان #D2B48C */
+    --color-primary-50: #faf6f0;
+    --color-primary-100: #f5ede0;
+    --color-primary-200: #ebe0c9;
+    --color-primary-300: #e0d0b0;
+    --color-primary-400: #d9c29a;
+    --color-primary-500: #d2b48c;
+    --color-primary-600: #b89a6e;
+    --color-primary-700: #9e8054;
+    --color-primary-800: #7d6540;
+    --color-primary-900: #5c4a2e;
 }

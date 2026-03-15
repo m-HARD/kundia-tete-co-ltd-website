@@ -1,9 +1,9 @@
 <template>
   <AppLayout>
     <div class="space-y-0">
-      <!-- Hero: عرض كامل مع خلفية -->
+      <!-- Hero: عرض كامل مع خلفية (بدون 100vw لتجنب التمرير الأفقي) -->
       <section
-        class="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden bg-gradient-to-b from-gray-50 to-white py-24 dark:bg-gray-900 sm:py-32"
+        class="relative w-full overflow-hidden bg-gradient-to-b from-gray-50 to-white py-24 dark:bg-gray-900 sm:py-32"
       >
         <!-- دوائر زينة خلفية (مستوحى من الموقع المرجعي) -->
         <div
@@ -66,9 +66,9 @@
         </div>
       </section>
 
-      <!-- إحصائيات مع عدّادات -->
+      <!-- إحصائيات مع عدّادات (عرض كامل بدون 100vw) -->
       <section
-        class="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-primary-600 py-16 dark:bg-gray-800/80"
+        class="relative w-full overflow-hidden bg-primary-600 py-16 dark:bg-gray-800/80"
         ref="statsSection"
       >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -124,8 +124,8 @@
         </div>
       </section>
 
-      <!-- CTA -->
-      <section class="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-gray-100 py-20 dark:bg-gray-800">
+      <!-- CTA (عرض كامل بدون 100vw) -->
+      <section class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-800">
         <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
             جاهز لبناء شيء مميز؟

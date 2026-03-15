@@ -121,7 +121,7 @@
             :key="svc.title"
             href="/services"
             dir="rtl"
-            class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 transition hover:border-primary-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-700/80 dark:bg-gray-800 dark:hover:border-primary-500/50 dark:hover:bg-gray-800/90"
+            class="group flex flex-col rounded-xl border border-gray-200/80 bg-white/90 p-6 transition hover:border-primary-400 hover:bg-white/95 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-700/70 dark:bg-gray-800/75 dark:hover:border-primary-500/50 dark:hover:bg-gray-800/85"
           >
             <!-- أيقونة في الطرف (RTL) مع توهج بلون الأساسي -->
             <span
@@ -166,7 +166,7 @@
             <article
               v-for="(item, i) in testimonials"
               :key="i"
-              class="relative flex flex-col rounded-xl border border-gray-200 bg-white p-6 text-start dark:border-gray-700/80 dark:bg-gray-800/90"
+              class="relative flex flex-col rounded-xl border border-gray-200/80 bg-white/90 p-6 text-start dark:border-gray-700/70 dark:bg-gray-800/75"
               dir="rtl"
             >
               <!-- أيقونة الاقتباس -->

@@ -26,15 +26,15 @@
 
         <!-- طبقة شفافة خفيفة في الوضع الداكن -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/10"
+          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/90"
           aria-hidden="true"
         />
 
         <div class="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl lg:text-7xl">
+          <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl lg:text-6xl">
             شريكك الاستراتيجي في التحول الرقمي
           </h1>
-          <p class="mx-auto mt-6 max-w-2xl text-xl leading-relaxed text-gray-600 opacity-90 dark:text-gray-300 sm:text-2xl">
+          <p class="mx-auto mt-20 max-w-2xl text-xl leading-relaxed text-gray-600 opacity-90 dark:text-gray-300 sm:text-2xl">
             في عالم تتسارع فيه التغيرات، تنطلق «كنديا تيتي المحدودة» برؤية طموحة مستوحاة من
             ديناميكية التكنولوجيا الحديثة وآفاق الطيران. نحن لا نقدم مجرد برمجيات، بل نكرس جهودنا
             لدمج التكنولوجيا المتقدمة مع الفهم العميق لاحتياجات العمل، لنضع بين يديك حلولاً متكاملة
@@ -153,18 +153,66 @@
         </div>
       </section>
 
-      <!-- ─── قسم آراء عملائنا (Testimonials) ─────────────────────────────────
-           ماهية القسم: شبكة بطاقات آراء العملاء — عنوان «آراء عملائنا»، تحتيه نص فرعي،
-           ثم 6 بطاقات (2×3): اقتباس، نص الرأي، تقييم نجوم، اسم العميل والمنصب/الشركة. -->
+      <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
+           ماهية القسم: بطاقة بارزة بزوايا دائرية — خلفية البطاقة باللون الأساسي،
+           خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
       <section
-        id="testimonials"
-        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20 sm:py-24"
+        id="cta"
+        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20"
       >
         <!-- طبقة شفافة خفيفة في الوضع الداكن لمجاراة باقي الأقسام -->
         <div
           class="pointer-events-none absolute inset-0 dark:bg-black/10"
           aria-hidden="true"
         />
+        <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
+          <div
+            class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
+          >
+            <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
+              جاهز لبناء شيء مميز؟
+            </h2>
+            <p class="mx-auto mt-4 max-w-xl text-xl text-primary-700 dark:text-primary-800">
+              شاركنا تفاصيل مشروعك وسنتواصل معك.
+            </p>
+            <Link
+              href="/contact"
+              class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-xl font-medium text-gray-600 shadow-md transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-200 dark:focus:ring-offset-primary-500"
+            >
+              ابدأ مشروعك
+              <span class="text-gray-500 dark:text-gray-600" aria-hidden="true">←</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── قسم آراء عملائنا (Testimonials) ─────────────────────────────────
+           ماهية القسم: نفس خلفية الهيرو — دوائر زينة وطبقة شفافية، ثم شبكة بطاقات آراء العملاء. -->
+      <section
+        id="testimonials"
+        class="section-bg-transparent relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-20 sm:py-24"
+      >
+        <!-- إضاءة خلفية: دوائر بلون الأساسي مائلة للأبيض (نفس شكل الهيرو) -->
+        <div
+          class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
+          aria-hidden="true"
+        >
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-none dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.22),0_0_200px_90px_rgba(245,238,228,0.12)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-none dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.2),0_0_160px_70px_rgba(255,250,240,0.08)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-none dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.25),0_0_140px_60px_rgba(255,252,245,0.1)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.18)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.15)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-none dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.2)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.18)]" />
+        </div>
+
+        <!-- طبقة شفافية خفيفة (نفس الهيرو) -->
+        <div
+          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/10"
+          aria-hidden="true"
+        />
+
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
             آراء عملائنا
@@ -209,40 +257,6 @@
                 </div>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
-           ماهية القسم: بطاقة بارزة بزوايا دائرية — خلفية البطاقة باللون الأساسي،
-           خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
-      <section
-        id="cta"
-        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20"
-      >
-        <!-- طبقة شفافة خفيفة في الوضع الداكن لمجاراة باقي الأقسام -->
-        <div
-          class="pointer-events-none absolute inset-0 dark:bg-black/10"
-          aria-hidden="true"
-        />
-        <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
-          <div
-            class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
-          >
-            <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
-              جاهز لبناء شيء مميز؟
-            </h2>
-            <p class="mx-auto mt-4 max-w-xl text-xl text-primary-700 dark:text-primary-800">
-              شاركنا تفاصيل مشروعك وسنتواصل معك.
-            </p>
-            <Link
-              href="/contact"
-              class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-xl font-medium text-gray-600 shadow-md transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-200 dark:focus:ring-offset-primary-500"
-            >
-              ابدأ مشروعك
-              <span class="text-gray-500 dark:text-gray-600" aria-hidden="true">←</span>
-            </Link>
           </div>
         </div>
       </section>

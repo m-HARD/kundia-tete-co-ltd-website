@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# سياق المشروع للمحادثة — لا يُرفع للمستودع
+docs/PROJECT_CONTEXT.md

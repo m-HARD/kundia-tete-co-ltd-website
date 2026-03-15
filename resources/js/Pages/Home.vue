@@ -1,8 +1,12 @@
 <template>
   <AppLayout>
     <div class="space-y-0">
-      <!-- Hero: عرض كامل مع خلفية (بدون 100vw لتجنب التمرير الأفقي) -->
+      <!-- ─── قسم الهيرو (Hero) ─────────────────────────────────────────────
+           ماهية القسم: البانر الرئيسي للصفحة — عنوان «شريكك الاستراتيجي»، فقرة التعريف،
+           شعار «دعنا نبدأ الرحلة معاً»، وأزرار (تواصل معنا / خدماتنا). يحتوي على دوائر
+           زينة في الخلفية. -->
       <section
+        id="hero"
         class="relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 dark:bg-gray-900 sm:py-32"
       >
         <!-- دوائر زينة خلفية (مستوحى من الموقع المرجعي) -->
@@ -51,8 +55,13 @@
         </div>
       </section>
 
-      <!-- شركاء / ثقة العملاء -->
-      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <!-- ─── قسم الشركاء (Partners) ────────────────────────────────────────
+           ماهية القسم: عرض ثقة العملاء والشركاء — عنوان «يثق بنا شركاء رائعون» ووصف
+           التعاون مع الجهات والشركات. (يمكن لاحقاً إضافة شعارات الشركاء.) -->
+      <section
+        id="partners"
+        class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
+      >
         <h2 class="text-center text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
           يثق بنا شركاء رائعون
         </h2>
@@ -66,8 +75,11 @@
         </div>
       </section>
 
-      <!-- إحصائيات مع عدّادات (عرض كامل بدون 100vw) -->
+      <!-- ─── قسم الإحصائيات (Stats) ───────────────────────────────────────
+           ماهية القسم: شريط أرقام (مشاريع، عملاء، سنوات خبرة، دعم 24/7) مع عدّادات
+           GSAP تتحرك عند ظهور القسم في الشاشة. الخلفية بلون primary. -->
       <section
+        id="stats"
         class="relative w-full overflow-hidden bg-primary-600 py-16 dark:bg-gray-800/80"
         ref="statsSection"
       >
@@ -85,8 +97,13 @@
         </div>
       </section>
 
-      <!-- خدمات مصغّرة -->
-      <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <!-- ─── قسم الخدمات المصغّرة (Services Preview) ──────────────────────
+           ماهية القسم: عرض مجموعة من الخدمات (بطاقات) مع أيقونة وعنوان ووصف، ورابط
+           «عرض كل الخدمات» إلى صفحة الخدمات. -->
+      <section
+        id="services-preview"
+        class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
+      >
         <h2 class="text-center text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
           خدماتنا
         </h2>
@@ -124,8 +141,13 @@
         </div>
       </section>
 
-      <!-- CTA (عرض كامل بدون 100vw) -->
-      <section class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-800">
+      <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
+           ماهية القسم: نداء نهائي للمستخدم — «جاهز لبناء شيء مميز؟» مع زر «ابدأ مشروعك»
+           يوجّه إلى صفحة التواصل. -->
+      <section
+        id="cta"
+        class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-800"
+      >
         <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
             جاهز لبناء شيء مميز؟

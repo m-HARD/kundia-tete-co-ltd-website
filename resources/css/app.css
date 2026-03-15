@@ -13,6 +13,9 @@
     --font-cairo: 'Cairo', ui-sans-serif, system-ui, sans-serif;
     --font-sans: var(--font-cairo), 'Cairo', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    /* خلفية المشروع في الوضع الداكن + لون مكتوم للأقسام الشفافة */
+    --color-background: #09090b;
+    --color-muted: #27272a;
     /* اللون الأساسي: بيج/تان #D2B48C */
     --color-primary-50: #faf6f0;
     --color-primary-100: #f5ede0;
@@ -24,4 +27,22 @@
     --color-primary-700: #9e8054;
     --color-primary-800: #7d6540;
     --color-primary-900: #5c4a2e;
+}
+
+/* ثيم عام للخلفيات في الوضع الداكن: منطقة المحتوى الرئيسية */
+.dark main {
+    background-color: color-mix(in oklab, var(--color-muted) 30%, transparent);
+}
+
+/* خلفية شفافة لأقسام معيّنة (الهيرو، الإحصائيات، آراء العملاء، CTA) */
+.dark .section-bg-transparent {
+    background-color: color-mix(in oklab, var(--color-muted) 30%, transparent);
+}
+
+/* بطاقات (الخدمات، آراء العملاء): نفس اللون المكتوم مع شفافية أعلى */
+.dark .card-bg-transparent {
+    background-color: color-mix(in oklab, var(--color-muted) 50%, transparent);
+}
+.dark .card-bg-transparent:hover {
+    background-color: color-mix(in oklab, var(--color-muted) 60%, transparent);
 }

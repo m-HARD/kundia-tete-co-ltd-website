@@ -7,7 +7,7 @@
            زينة في الخلفية. -->
       <section
         id="hero"
-        class="relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 dark:bg-[#030712] sm:py-32"
+        class="section-bg-transparent relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 sm:py-32"
       >
         <!-- إضاءة خلفية: دوائر بلون الأساسي مائلة للأبيض (وضع داكن فقط) -->
         <div
@@ -24,9 +24,9 @@
           <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.18)]" />
         </div>
 
-        <!-- طبقة خلفية شفافة سوداء فوق الهيرو -->
+        <!-- طبقة شفافة خفيفة في الوضع الداكن -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-gray-900/95"
+          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/10"
           aria-hidden="true"
         />
 
@@ -65,7 +65,7 @@
            التعاون مع الجهات والشركات. (يمكن لاحقاً إضافة شعارات الشركاء.) -->
       <section
         id="partners"
-        class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 dark:bg-gray-900"
+        class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
       >
         <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
           يثق بنا شركاء رائعون
@@ -85,16 +85,21 @@
            GSAP تتحرك عند ظهور القسم في الشاشة. الخلفية بلون primary. -->
       <section
         id="stats"
-        class="relative w-full overflow-hidden bg-primary-600 py-16 dark:bg-gray-800/80"
+        class="section-bg-transparent relative w-full overflow-hidden bg-primary-600 py-16"
         ref="statsSection"
       >
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- طبقة شفافة خفيفة في الوضع الداكن -->
+        <div
+          class="pointer-events-none absolute inset-0 dark:bg-black/10"
+          aria-hidden="true"
+        />
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div v-for="(stat, idx) in stats" :key="stat.label" class="text-center">
-              <div class="text-4xl font-bold tabular-nums text-white sm:text-5xl">
+              <div class="text-4xl font-bold tabular-nums text-white sm:text-5xl dark:text-gray-100">
                 <span>{{ stat.display }}</span>{{ stat.suffix }}
               </div>
-              <div class="mt-2 text-base font-medium text-white/90 opacity-90 dark:text-gray-300">
+              <div class="mt-2 text-base font-medium text-white/90 opacity-90 dark:text-gray-400">
                 {{ stat.label }}
               </div>
             </div>
@@ -107,7 +112,7 @@
            وزر «عرض الكل» بلون أساسي. -->
       <section
         id="services-preview"
-        class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 dark:bg-gray-900"
+        class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
       >
         <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
           خدماتنا
@@ -121,7 +126,7 @@
             :key="svc.title"
             href="/services"
             dir="rtl"
-            class="group flex flex-col rounded-xl border border-gray-200/80 bg-white/90 p-6 transition hover:border-primary-400 hover:bg-white/95 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-700/70 dark:bg-gray-800/75 dark:hover:border-primary-500/50 dark:hover:bg-gray-800/85"
+            class="card-bg-transparent group flex flex-col rounded-xl border border-gray-200/70 bg-white/80 p-6 transition hover:border-primary-400 hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-600/50 dark:hover:border-primary-500/50"
           >
             <!-- أيقونة في الطرف (RTL) مع توهج بلون الأساسي -->
             <span
@@ -153,9 +158,14 @@
            ثم 6 بطاقات (2×3): اقتباس، نص الرأي، تقييم نجوم، اسم العميل والمنصب/الشركة. -->
       <section
         id="testimonials"
-        class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-950 sm:py-24"
+        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20 sm:py-24"
       >
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- طبقة شفافة خفيفة في الوضع الداكن لمجاراة باقي الأقسام -->
+        <div
+          class="pointer-events-none absolute inset-0 dark:bg-black/10"
+          aria-hidden="true"
+        />
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
             آراء عملائنا
           </h2>
@@ -166,7 +176,7 @@
             <article
               v-for="(item, i) in testimonials"
               :key="i"
-              class="relative flex flex-col rounded-xl border border-gray-200/80 bg-white/90 p-6 text-start dark:border-gray-700/70 dark:bg-gray-800/75"
+              class="card-bg-transparent relative flex flex-col rounded-xl border border-gray-200/70 bg-white/80 p-6 text-start dark:border-gray-600/50"
               dir="rtl"
             >
               <!-- أيقونة الاقتباس -->
@@ -208,9 +218,14 @@
            خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
       <section
         id="cta"
-        class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-950"
+        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20"
       >
-        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <!-- طبقة شفافة خفيفة في الوضع الداكن لمجاراة باقي الأقسام -->
+        <div
+          class="pointer-events-none absolute inset-0 dark:bg-black/10"
+          aria-hidden="true"
+        />
+        <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
           <div
             class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"

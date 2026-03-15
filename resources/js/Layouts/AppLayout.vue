@@ -1,11 +1,11 @@
 <template>
   <div
     class="min-h-screen transition-colors duration-300"
-    :class="dark ? 'bg-gray-900 text-gray-100' : 'bg-white text-gray-900'"
+    :class="dark ? 'bg-background text-gray-100' : 'bg-white text-gray-900'"
   >
     <SiteHeader :dark="dark" @toggle-dark="toggleDark" />
 
-    <main class="w-full py-8">
+    <main class="w-full">
       <slot />
     </main>
 

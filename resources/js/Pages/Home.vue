@@ -227,6 +227,65 @@
         </div>
       </section>
 
+      <!-- ─── قسم الأسئلة الشائعة (FAQ) ──────────────────────────────────────
+           ماهية القسم: أكورديون — سؤال واحد مفتوح في كل مرة، عنوان «الأسئلة الشائعة»،
+           وصف «كل ما تحتاج معرفته قبل أن نبدأ». -->
+      <section
+        id="faq"
+        class="section-bg-transparent relative w-full overflow-hidden bg-gray-50 py-20 sm:py-24"
+        dir="rtl"
+      >
+        <div class="pointer-events-none absolute inset-0 dark:bg-black/10" aria-hidden="true" />
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+            الأسئلة الشائعة
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
+            كل ما تحتاج معرفته قبل أن نبدأ.
+          </p>
+          <div class="mt-12 space-y-3">
+            <div
+              v-for="(item, i) in faqItems"
+              :key="i"
+              class="card-bg-transparent overflow-hidden rounded-xl border border-gray-200/70 dark:border-gray-600/50"
+            >
+              <button
+                type="button"
+                class="flex w-full items-center justify-between gap-4 px-5 py-4 text-start transition hover:bg-gray-100/80 dark:hover:bg-gray-800/50"
+                :aria-expanded="faqOpenIndex === i"
+                :aria-controls="'faq-answer-' + i"
+                :id="'faq-question-' + i"
+                @click="faqOpenIndex = faqOpenIndex === i ? null : i"
+              >
+                <span class="text-lg font-medium text-gray-900 dark:text-gray-100">
+                  {{ item.question }}
+                </span>
+                <span
+                  class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 transition-transform duration-200"
+                  :class="{ 'rotate-180': faqOpenIndex === i }"
+                  aria-hidden="true"
+                >
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+              <div
+                :id="'faq-answer-' + i"
+                :aria-labelledby="'faq-question-' + i"
+                role="region"
+                class="border-t border-gray-200/70 bg-gray-100/80 dark:border-gray-600/50 dark:bg-gray-800/60"
+                :hidden="faqOpenIndex !== i"
+              >
+                <p class="px-5 py-4 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                  {{ item.answer }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
            ماهية القسم: بطاقة بارزة بزوايا دائرية — خلفية البطاقة باللون الأساسي،
            خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
@@ -274,6 +333,18 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 gsap.registerPlugin(ScrollTrigger);
 
 const statsSection = ref(null);
+const faqOpenIndex = ref(null);
+
+const faqItems = ref([
+  { question: 'ما هي تكلفة المشروع؟', answer: 'نقدم عروض أسعار مخصصة بناءً على متطلبات كل مشروع. تواصل معنا للحصول على عرض سعر مجاني.' },
+  { question: 'هل تقدمون الدعم بعد الإطلاق؟', answer: 'نعم، نقدم دعم فني مستمر وباقات صيانة شهرية تشمل التحديثات والنسخ الاحتياطي والأمان.' },
+  { question: 'ما التقنيات التي تستخدمونها؟', answer: 'نستخدم أحدث التقنيات مثل Next.js, React, Node.js, Python, و AI/ML للحصول على أفضل النتائج.' },
+  { question: 'هل تطورون تطبيقات iOS و Android؟', answer: 'نعم، نطور تطبيقات لكلا النظامين باستخدام React Native أو Flutter مما يوفر الوقت والتكلفة.' },
+  { question: 'ما هي طرق الدفع المتاحة؟', answer: 'نقبل التحويل البنكي، مدى، Apple Pay، وبطاقات الائتمان. يمكن الدفع على مراحل حسب حجم المشروع.' },
+  { question: 'هل هناك دفعة مقدمة؟', answer: 'نعم، عادة نطلب 30-50% دفعة مقدمة لبدء العمل، والباقي عند التسليم أو على مراحل.' },
+  { question: 'كيف يمكنني التواصل معكم؟', answer: 'يمكنك التواصل عبر نموذج الاتصال، البريد الإلكتروني، الواتساب، أو الاتصال المباشر. نرد خلال 24 ساعة.' },
+]);
+
 const stats = ref([
   { value: 50, display: 0, suffix: '+', label: 'مشروع' },
   { value: 20, display: 0, suffix: '+', label: 'عميل' },

@@ -115,11 +115,12 @@
         <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
           نقدم مجموعة متكاملة من الخدمات التقنية.
         </p>
-        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" dir="rtl">
           <Link
             v-for="(svc, i) in servicesPreview"
             :key="svc.title"
             href="/services"
+            dir="rtl"
             class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 transition hover:border-primary-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-700/80 dark:bg-gray-800 dark:hover:border-primary-500/50 dark:hover:bg-gray-800/90"
           >
             <!-- أيقونة في الطرف (RTL) مع توهج بلون الأساسي -->
@@ -144,6 +145,61 @@
             عرض الكل
             <span class="me-2" aria-hidden="true">←</span>
           </Link>
+        </div>
+      </section>
+
+      <!-- ─── قسم آراء عملائنا (Testimonials) ─────────────────────────────────
+           ماهية القسم: شبكة بطاقات آراء العملاء — عنوان «آراء عملائنا»، تحتيه نص فرعي،
+           ثم 6 بطاقات (2×3): اقتباس، نص الرأي، تقييم نجوم، اسم العميل والمنصب/الشركة. -->
+      <section
+        id="testimonials"
+        class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-950 sm:py-24"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
+            آراء عملائنا
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
+            اكتشف ما يقوله عملاؤنا عنا
+          </p>
+          <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" dir="rtl">
+            <article
+              v-for="(item, i) in testimonials"
+              :key="i"
+              class="relative flex flex-col rounded-xl border border-gray-200 bg-white p-6 text-start dark:border-gray-700/80 dark:bg-gray-800/90"
+              dir="rtl"
+            >
+              <!-- أيقونة الاقتباس -->
+              <span
+                class="text-4xl font-serif leading-none text-gray-300 dark:text-gray-600"
+                aria-hidden="true"
+              >
+                "
+              </span>
+              <p class="mt-2 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                {{ item.text }}
+              </p>
+              <!-- اسم ومنصب صاحب التعليق مع النجوم مقابلهم -->
+              <div class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-gray-200 pt-4 dark:border-gray-600">
+                <div>
+                  <p class="font-semibold text-gray-900 dark:text-white">
+                    {{ item.name }}
+                  </p>
+                  <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
+                    {{ item.role }}
+                  </p>
+                </div>
+                <div class="flex gap-0.5 shrink-0" aria-label="تقييم 5 من 5">
+                  <span
+                    v-for="star in 5"
+                    :key="star"
+                    class="text-amber-400"
+                    aria-hidden="true"
+                  >★</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -226,6 +282,39 @@ const servicesPreview = ref([
     title: 'الدعاية والإعلان والمطبوعات',
     desc: 'تصميم هوية بصرية ومطبوعات وحملات إعلانية.',
     icon: '📢',
+  },
+]);
+
+const testimonials = ref([
+  {
+    text: 'فريق محترف ومتعاون، أنجزوا مشروعنا في الوقت المحدد وبجودة عالية جداً. التواصل معهم كان سلساً والنتائج فاقت توقعاتنا.',
+    name: 'أحمد الغامدي',
+    role: 'مدير تنفيذي — شركة التقنية المتقدمة',
+  },
+  {
+    text: 'تعاملنا مع كنديا تيتي لتنفيذ أنظمة المراقبة والإنذار. الخدمة ممتازة والدعم الفني متواصل. ننصح بالتعامل معهم.',
+    name: 'سارة محمد',
+    role: 'مديرة العمليات — مجموعة صناعية',
+  },
+  {
+    text: 'قدمت الشركة حلول بنية تحتية متكاملة لمركز البيانات لدينا. الاحترافية والالتزام بالمعايير كانا واضحين من اليوم الأول.',
+    name: 'خالد العتيبي',
+    role: 'مدير تقنية المعلومات',
+  },
+  {
+    text: 'تجربة رائعة من ناحية تصميم الموقع والاستجابة. فريق يفهّم احتياجات العميل ويترجمها إلى حلول عملية وأنيقة.',
+    name: 'نورة الشمري',
+    role: 'مالكة مشروع تجاري',
+  },
+  {
+    text: 'أنظمة الحضور والانصراف وتتبع المركبات التي زودتنا بها الشركة تعمل بدقة وتوفر علينا وقتاً وجهداً كبيرين.',
+    name: 'عمر حسن',
+    role: 'مدير الموارد البشرية — شركة نقل',
+  },
+  {
+    text: 'شريك موثوق في التحول الرقمي. نتعامل معهم منذ سنوات ونوصي بهم لكل من يبحث عن جودة وشفافية في التنفيذ.',
+    name: 'فاطمة عبدالله',
+    role: 'مديرة تطوير أعمال',
   },
 ]);
 

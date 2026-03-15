@@ -7,47 +7,52 @@
            زينة في الخلفية. -->
       <section
         id="hero"
-        class="relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 dark:bg-gray-900 sm:py-32"
+        class="relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 dark:bg-[#030712] sm:py-32"
       >
-        <!-- دوائر زينة خلفية (مستوحى من الموقع المرجعي) -->
+        <!-- إضاءة خلفية: دوائر بلون الأساسي مائلة للأبيض (وضع داكن فقط) -->
         <div
-          class="pointer-events-none absolute inset-0 overflow-hidden opacity-30"
+          class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
           aria-hidden="true"
         >
-          <div
-            class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border border-primary-500/20"
-          />
-          <div
-            class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border border-primary-400/20"
-          />
-          <div
-            class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary-300/20"
-          />
+          <!-- في الوضع الفاتح: دوائر حدود خفيفة -->
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-none dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.22),0_0_200px_90px_rgba(245,238,228,0.12)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-none dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.2),0_0_160px_70px_rgba(255,250,240,0.08)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-none dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.25),0_0_140px_60px_rgba(255,252,245,0.1)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.18)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.15)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-none dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.2)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.18)]" />
         </div>
 
+        <!-- طبقة خلفية شفافة سوداء فوق الهيرو -->
+        <div
+          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-gray-900/95"
+          aria-hidden="true"
+        />
+
         <div class="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
+          <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl lg:text-7xl">
             شريكك الاستراتيجي في التحول الرقمي
           </h1>
-          <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-600 opacity-90 dark:text-gray-300 sm:text-xl">
+          <p class="mx-auto mt-6 max-w-2xl text-xl leading-relaxed text-gray-600 opacity-90 dark:text-gray-300 sm:text-2xl">
             في عالم تتسارع فيه التغيرات، تنطلق «كنديا تيتي المحدودة» برؤية طموحة مستوحاة من
             ديناميكية التكنولوجيا الحديثة وآفاق الطيران. نحن لا نقدم مجرد برمجيات، بل نكرس جهودنا
             لدمج التكنولوجيا المتقدمة مع الفهم العميق لاحتياجات العمل، لنضع بين يديك حلولاً متكاملة
             تصنع الفارق.
           </p>
-          <p class="mt-8 text-xl font-medium text-primary-600 dark:text-primary-400">
+          <p class="mt-8 text-2xl font-medium text-primary-600 dark:text-primary-400">
             كنديا تيتي المحدودة — دعنا نبدأ الرحلة معاً.
           </p>
           <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              class="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+              class="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-lg font-medium text-white shadow transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
             >
               تواصل معنا
             </Link>
             <Link
               href="/services"
-              class="inline-flex items-center rounded-lg border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-offset-gray-900"
+              class="inline-flex items-center rounded-lg border border-gray-300 bg-white px-6 py-3 text-lg font-medium text-gray-700 transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-offset-gray-900"
             >
               خدماتنا
             </Link>
@@ -60,18 +65,18 @@
            التعاون مع الجهات والشركات. (يمكن لاحقاً إضافة شعارات الشركاء.) -->
       <section
         id="partners"
-        class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
+        class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 dark:bg-gray-900"
       >
-        <h2 class="text-center text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
+        <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
           يثق بنا شركاء رائعون
         </h2>
-        <p class="mx-auto mt-2 max-w-xl text-center text-gray-600 opacity-80 dark:text-gray-400">
+        <p class="mx-auto mt-3 max-w-xl text-center text-lg text-gray-600 opacity-80 dark:text-gray-400">
           نتعاون مع أفضل الجهات والشركات في مختلف القطاعات.
         </p>
         <div class="mt-12 flex flex-wrap items-center justify-center gap-8 text-gray-500 opacity-70 dark:text-gray-400">
-          <span class="text-sm font-medium">شركاء وعملاء متميزون</span>
+          <span class="text-base font-medium">شركاء وعملاء متميزون</span>
           <span class="hidden sm:inline">•</span>
-          <span class="text-sm">مجموعة متميزة من العملاء في القطاعين العام والخاص</span>
+          <span class="text-base">مجموعة متميزة من العملاء في القطاعين العام والخاص</span>
         </div>
       </section>
 
@@ -86,10 +91,10 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div v-for="(stat, idx) in stats" :key="stat.label" class="text-center">
-              <div class="text-3xl font-bold tabular-nums text-white sm:text-4xl">
+              <div class="text-4xl font-bold tabular-nums text-white sm:text-5xl">
                 <span>{{ stat.display }}</span>{{ stat.suffix }}
               </div>
-              <div class="mt-1 text-sm font-medium text-white/90 opacity-90 dark:text-gray-300">
+              <div class="mt-2 text-base font-medium text-white/90 opacity-90 dark:text-gray-300">
                 {{ stat.label }}
               </div>
             </div>
@@ -98,34 +103,35 @@
       </section>
 
       <!-- ─── قسم الخدمات المصغّرة (Services Preview) ──────────────────────
-           ماهية القسم: عرض مجموعة من الخدمات (بطاقات) مع أيقونة وعنوان ووصف، ورابط
-           «عرض كل الخدمات» إلى صفحة الخدمات. -->
+           ماهية القسم: شبكة بطاقات خدمات (3×2) — أيقونة بتوهج لون أساسي، عنوان ووصف،
+           وزر «عرض الكل» بلون أساسي. -->
       <section
         id="services-preview"
-        class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
+        class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 dark:bg-gray-900"
       >
-        <h2 class="text-center text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
+        <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
           خدماتنا
         </h2>
-        <p class="mx-auto mt-2 max-w-2xl text-center text-gray-600 opacity-80 dark:text-gray-400">
-          نقدم حلولاً متكاملة في تقنية المعلومات والهندسة.
+        <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
+          نقدم مجموعة متكاملة من الخدمات التقنية.
         </p>
-        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Link
             v-for="(svc, i) in servicesPreview"
             :key="svc.title"
             href="/services"
-            class="group rounded-xl border border-gray-200 bg-white p-6 transition hover:border-primary-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-700 dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 transition hover:border-primary-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:border-gray-700/80 dark:bg-gray-800 dark:hover:border-primary-500/50 dark:hover:bg-gray-800/90"
           >
+            <!-- أيقونة في الطرف (RTL) مع توهج بلون الأساسي -->
             <span
-              class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100 text-2xl text-primary-600 dark:bg-primary-500/20 dark:text-primary-400"
+              class="me-auto flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-2xl ring-2 ring-primary-400/50 bg-primary-50 text-primary-700 dark:ring-primary-400/60 dark:bg-primary-500/15 dark:text-primary-300 dark:shadow-[0_0_20px_rgba(210,180,140,0.25)]"
             >
               {{ svc.icon }}
             </span>
-            <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-gray-100">
+            <h3 class="mt-4 text-xl font-bold text-gray-900 dark:text-white">
               {{ svc.title }}
             </h3>
-            <p class="mt-2 text-sm leading-relaxed text-gray-600 opacity-80 dark:text-gray-400">
+            <p class="mt-2 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-400">
               {{ svc.desc }}
             </p>
           </Link>
@@ -133,34 +139,40 @@
         <div class="mt-12 text-center">
           <Link
             href="/services"
-            class="inline-flex items-center font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
+            class="inline-flex items-center rounded-xl bg-primary-600 px-6 py-3 text-lg font-medium text-white shadow-md transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
           >
-            عرض كل الخدمات
-            <span class="mr-1" aria-hidden="true">←</span>
+            عرض الكل
+            <span class="me-2" aria-hidden="true">←</span>
           </Link>
         </div>
       </section>
 
       <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
-           ماهية القسم: نداء نهائي للمستخدم — «جاهز لبناء شيء مميز؟» مع زر «ابدأ مشروعك»
-           يوجّه إلى صفحة التواصل. -->
+           ماهية القسم: بطاقة بارزة بزوايا دائرية — خلفية البطاقة باللون الأساسي،
+           خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
       <section
         id="cta"
-        class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-800"
+        class="relative w-full overflow-hidden bg-gray-100 py-20 dark:bg-gray-950"
       >
-        <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
-            جاهز لبناء شيء مميز؟
-          </h2>
-          <p class="mt-4 text-lg text-gray-600 opacity-90 dark:text-gray-300">
-            شاركنا تفاصيل مشروعك وسنتواصل معك.
-          </p>
-          <Link
-            href="/contact"
-            class="mt-8 inline-flex items-center rounded-lg bg-primary-600 px-8 py-4 text-lg font-medium text-white shadow transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
+          <div
+            class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
           >
-            ابدأ مشروعك
-          </Link>
+            <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
+              جاهز لبناء شيء مميز؟
+            </h2>
+            <p class="mx-auto mt-4 max-w-xl text-xl text-primary-700 dark:text-primary-800">
+              شاركنا تفاصيل مشروعك وسنتواصل معك.
+            </p>
+            <Link
+              href="/contact"
+              class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-xl font-medium text-gray-600 shadow-md transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-200 dark:focus:ring-offset-primary-500"
+            >
+              ابدأ مشروعك
+              <span class="text-gray-500 dark:text-gray-600" aria-hidden="true">←</span>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -204,6 +216,16 @@ const servicesPreview = ref([
     title: 'البيت الذكي والتحكم',
     desc: 'حلول ذكية للإنارة والتحكم والإنتركم.',
     icon: '🏠',
+  },
+  {
+    title: 'تتبع المركبات',
+    desc: 'حلول تتبع وإدارة أسطول المركبات بدقة وموثوقية.',
+    icon: '🚗',
+  },
+  {
+    title: 'الدعاية والإعلان والمطبوعات',
+    desc: 'تصميم هوية بصرية ومطبوعات وحملات إعلانية.',
+    icon: '📢',
   },
 ]);
 

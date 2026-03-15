@@ -153,40 +153,6 @@
         </div>
       </section>
 
-      <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
-           ماهية القسم: بطاقة بارزة بزوايا دائرية — خلفية البطاقة باللون الأساسي،
-           خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
-      <section
-        id="cta"
-        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20"
-      >
-        <!-- طبقة شفافة خفيفة في الوضع الداكن لمجاراة باقي الأقسام -->
-        <div
-          class="pointer-events-none absolute inset-0 dark:bg-black/10"
-          aria-hidden="true"
-        />
-        <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
-          <div
-            class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
-          >
-            <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
-              جاهز لبناء شيء مميز؟
-            </h2>
-            <p class="mx-auto mt-4 max-w-xl text-xl text-primary-700 dark:text-primary-800">
-              شاركنا تفاصيل مشروعك وسنتواصل معك.
-            </p>
-            <Link
-              href="/contact"
-              class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-xl font-medium text-gray-600 shadow-md transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-200 dark:focus:ring-offset-primary-500"
-            >
-              ابدأ مشروعك
-              <span class="text-gray-500 dark:text-gray-600" aria-hidden="true">←</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <!-- ─── قسم آراء عملائنا (Testimonials) ─────────────────────────────────
            ماهية القسم: نفس خلفية الهيرو — دوائر زينة وطبقة شفافية، ثم شبكة بطاقات آراء العملاء. -->
       <section
@@ -209,7 +175,7 @@
 
         <!-- طبقة شفافية خفيفة (نفس الهيرو) -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/10"
+          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/90"
           aria-hidden="true"
         />
 
@@ -257,6 +223,40 @@
                 </div>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── قسم الدعوة للإجراء (CTA) ──────────────────────────────────────
+           ماهية القسم: بطاقة بارزة بزوايا دائرية — خلفية البطاقة باللون الأساسي،
+           خلفية القسم داكنة، عنوان بلون أغمق، زر فاتح مع سهم. -->
+      <section
+        id="cta"
+        class="section-bg-transparent relative w-full overflow-hidden bg-gray-100 py-20"
+      >
+        <!-- طبقة شفافة خفيفة في الوضع الداكن لمجاراة باقي الأقسام -->
+        <div
+          class="pointer-events-none absolute inset-0 dark:bg-black/10"
+          aria-hidden="true"
+        />
+        <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
+          <div
+            class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
+          >
+            <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
+              جاهز لبناء شيء مميز؟
+            </h2>
+            <p class="mx-auto mt-4 max-w-xl text-xl text-primary-700 dark:text-primary-800">
+              شاركنا تفاصيل مشروعك وسنتواصل معك.
+            </p>
+            <Link
+              href="/contact"
+              class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-xl font-medium text-gray-600 shadow-md transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:bg-gray-100 dark:text-gray-700 dark:hover:bg-gray-200 dark:focus:ring-offset-primary-500"
+            >
+              ابدأ مشروعك
+              <span class="text-gray-500 dark:text-gray-600" aria-hidden="true">←</span>
+            </Link>
           </div>
         </div>
       </section>

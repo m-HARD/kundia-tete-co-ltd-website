@@ -369,6 +369,163 @@
           </div>
         </div>
       </section>
+
+      <!-- ─── قسم تواصل معنا (Contact) ──────────────────────────────────────
+           خلفية مثل قسم الأسئلة الشائعة: بطاقات معلومات اتصال + خريطة + نموذج إرسال. -->
+      <section
+        id="contact"
+        class="section-bg-transparent relative w-full overflow-hidden bg-gray-50 py-20 sm:py-24"
+        dir="rtl"
+      >
+        <div class="pointer-events-none absolute inset-0 dark:bg-black/10" aria-hidden="true" />
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-center text-3xl font-bold leading-tight text-gray-900 dark:text-white sm:text-4xl">
+            تواصل معنا
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-lg leading-loose text-gray-600 dark:text-gray-400">
+            نسعد بالرد
+          </p>
+
+          <div class="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-12">
+            <!-- العمود الأيسر: معلومات الاتصال + الخريطة -->
+            <div class="space-y-6">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="card-bg-transparent flex items-start gap-4 rounded-xl border border-gray-200/70 p-5 dark:border-gray-600/50">
+                  <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/20 text-primary-600 dark:bg-primary-500/30 dark:text-primary-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                  </span>
+                  <div>
+                    <p class="text-sm font-medium text-gray-500 dark:text-gray-400">الهاتف</p>
+                    <p class="mt-1 text-base leading-relaxed text-gray-900 dark:text-gray-100">+249-XXX-XXX-XXXX</p>
+                  </div>
+                </div>
+                <div class="card-bg-transparent flex items-start gap-4 rounded-xl border border-gray-200/70 p-5 dark:border-gray-600/50">
+                  <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/20 text-primary-600 dark:bg-primary-500/30 dark:text-primary-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                  </span>
+                  <div>
+                    <p class="text-sm font-medium text-gray-500 dark:text-gray-400">البريد الإلكتروني</p>
+                    <p class="mt-1 text-base leading-relaxed text-gray-900 dark:text-gray-100">info@kundiatete.com</p>
+                  </div>
+                </div>
+                <div class="card-bg-transparent flex items-start gap-4 rounded-xl border border-gray-200/70 p-5 dark:border-gray-600/50 sm:col-span-2">
+                  <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/20 text-primary-600 dark:bg-primary-500/30 dark:text-primary-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  </span>
+                  <div>
+                    <p class="text-sm font-medium text-gray-500 dark:text-gray-400">ساعات العمل</p>
+                    <p class="mt-1 text-base leading-relaxed text-gray-900 dark:text-gray-100">الأحد — الخميس: 9 صباحاً - 6 مساءً</p>
+                  </div>
+                </div>
+                <div class="card-bg-transparent flex items-start gap-4 rounded-xl border border-gray-200/70 p-5 dark:border-gray-600/50 sm:col-span-2">
+                  <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/20 text-primary-600 dark:bg-primary-500/30 dark:text-primary-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  </span>
+                  <div>
+                    <p class="text-sm font-medium text-gray-500 dark:text-gray-400">العنوان</p>
+                    <p class="mt-1 text-base leading-relaxed text-gray-900 dark:text-gray-100">الخرطوم، السودان</p>
+                  </div>
+                </div>
+              </div>
+              <div class="overflow-hidden rounded-xl border border-gray-200/70 dark:border-gray-600/50">
+                <iframe
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=32.45%2C15.45%2C32.65%2C15.55&layer=mapnik"
+                  class="h-72 w-full border-0 dark:opacity-90"
+                  title="الخرطوم، السودان"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- العمود الأيمن: نموذج التواصل -->
+            <form
+              action="/contact"
+              method="post"
+              class="card-bg-transparent flex flex-col gap-4 rounded-xl border border-gray-200/70 p-6 dark:border-gray-600/50 sm:p-8"
+            >
+              <input type="hidden" name="_token" :value="csrfToken" />
+              <div>
+                <label for="contact-name" class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">الاسم</label>
+                <input id="contact-name" type="text" name="name" placeholder="أدخل اسمك الكامل" required class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 placeholder-gray-500 transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400" />
+              </div>
+              <div>
+                <label for="contact-email" class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">البريد</label>
+                <input id="contact-email" type="email" name="email" placeholder="example@email.com" required class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 placeholder-gray-500 transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400" />
+              </div>
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label for="contact-mobile" class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">الجوال</label>
+                  <input id="contact-mobile" type="tel" name="mobile" placeholder="+249 XXX XXX XXXX" class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 placeholder-gray-500 transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400" />
+                </div>
+                <div>
+                  <label for="contact-company" class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">الشركة</label>
+                  <input id="contact-company" type="text" name="company" placeholder="اسم شركتك" class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 placeholder-gray-500 transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400" />
+                </div>
+              </div>
+              <div>
+                <label for="contact-subject" class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">الموضوع</label>
+                <input id="contact-subject" type="text" name="subject" placeholder="موضوع رسالتك" class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 placeholder-gray-500 transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400" />
+              </div>
+              <div>
+                <label for="contact-message" class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">رسالتك</label>
+                <textarea id="contact-message" name="message" rows="2" placeholder="اكتب رسالتك هنا..." required class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 placeholder-gray-500 transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400" />
+              </div>
+              <button
+                type="submit"
+                class="mt-2 w-full rounded-xl bg-primary-600 px-6 py-4 text-lg font-medium text-white shadow-md transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+              >
+                إرسال
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── قسم شريكك الاستراتيجي (About / Digital Transformation) ─────────
+           خلفية مثل الهيرو: دوائر زينة وطبقة شفافية. محتوى موسّع عن كنديا تيتي والتحول الرقمي. -->
+      <section
+        id="strategic-partner"
+        class="section-bg-transparent relative w-full overflow-hidden bg-linear-to-b from-gray-50 to-white py-24 sm:py-32"
+        dir="rtl"
+      >
+        <!-- إضاءة خلفية: دوائر بلون الأساسي مائلة للأبيض (نفس شكل الهيرو) -->
+        <div
+          class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
+          aria-hidden="true"
+        >
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-none dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.22),0_0_200px_90px_rgba(245,238,228,0.12)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-none dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.2),0_0_160px_70px_rgba(255,250,240,0.08)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-none dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.25),0_0_140px_60px_rgba(255,252,245,0.1)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.18)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.15)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-none dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.2)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-none dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.18)]" />
+        </div>
+        <!-- طبقة شفافية خفيفة في الوضع الداكن (نفس الهيرو) -->
+        <div
+          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/90"
+          aria-hidden="true"
+        />
+        <div class="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold leading-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+            شريكك الاستراتيجي للتحول الرقمي المتكامل
+          </h2>
+          <div class="mt-12 space-y-8 text-start text-base leading-loose text-gray-600 dark:text-gray-300 sm:text-lg">
+            <p>
+              نحن في <strong class="text-gray-800 dark:text-gray-100">كنديا تيتي للحلول المتكاملة المحدودة</strong> نقدم منظومة تقنية متكاملة لدعم وتمكين الأعمال في السودان والمنطقة. لا نكتفي بتقديم خدمات تقليدية منفصلة، بل نبني لك بيئة عمل رقمية وآمنة تضمن حماية أصولك، نمو مبيعاتك، وتميّزك عن المنافسين. رؤيتنا مستوحاة من ديناميكية التكنولوجيا الحديثة وآفاق الطيران، لنكون شريكك الموثوق في كل مرحلة من مراحل التحول الرقمي.
+            </p>
+            <p>
+              تبدأ رحلتنا معك من تأمين منشآتك عبر <strong class="text-gray-800 dark:text-gray-100">أنظمة المراقبة والإنذار</strong> ضد الحريق والاختراق، مروراً بـ <strong class="text-gray-800 dark:text-gray-100">البنية التحتية والشبكات</strong> ومراكز البيانات التي تدعم أعمالك على مدار الساعة، وصولاً إلى <strong class="text-gray-800 dark:text-gray-100">تصميم وتطوير المواقع والتطبيقات</strong> السريعة والتفاعلية التي تقدم تجربة مستخدم استثنائية. نضيف إلى ذلك حلول <strong class="text-gray-800 dark:text-gray-100">البيت الذكي والتحكم</strong> في الإنارة والإنتركم، و<strong class="text-gray-800 dark:text-gray-100">تتبع المركبات وإدارة الأسطول</strong> بدقة وموثوقية، لتغطية احتياجاتك من الأمان إلى الإنتاجية.
+            </p>
+            <p>
+              ولإدارة أعمالك باحترافية ووصول منتجاتك إلى الجمهور المستهدف، نوفر <strong class="text-gray-800 dark:text-gray-100">حلول الدعاية والإعلان والمطبوعات</strong> وتصميم الهوية البصرية وحملات التسويق الرقمي وتحسين محركات البحث (SEO)، بحيث تصبح علامتك التجارية حاضرة وقوية في السوق. ندمج حيث يلزم أحدث تقنيات الذكاء الاصطناعي والأتمتة لتبسيط العمليات وتقليل التكاليف ورفع الكفاءة.
+            </p>
+            <p>
+              كل ذلك مدعوم بـ <strong class="text-gray-800 dark:text-gray-100">دعم فني متواصل وباقات صيانة</strong> تضمن استمرارية عمل أنظمتك. كنديا تيتي المحدودة — مزودك التقني الأول الموثوق في رحلة التحول الرقمي، من السودان إلى المنطقة.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </AppLayout>
 </template>
@@ -384,6 +541,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const statsSection = ref(null);
 const faqOpenIndex = ref(null);
+const csrfToken = ref(typeof document !== 'undefined' ? document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') ?? '' : '');
 
 const faqItems = ref([
   { question: 'ما هي تكلفة المشروع؟', answer: 'نقدم عروض أسعار مخصصة بناءً على متطلبات كل مشروع. تواصل معنا للحصول على عرض سعر مجاني.' },
@@ -443,27 +601,27 @@ const testimonials = ref([
   {
     text: 'فريق محترف ومتعاون، أنجزوا مشروعنا في الوقت المحدد وبجودة عالية جداً. التواصل معهم كان سلساً والنتائج فاقت توقعاتنا.',
     name: 'صالح بابكر',
-    role: 'مدير تنفيذي — شركة تقنية، الخرطوم',
+    role: 'مدير تنفيذي',
   },
   {
     text: 'تعاملنا مع كنديا تيتي لتنفيذ أنظمة المراقبة والإنذار. الخدمة ممتازة والدعم الفني متواصل. ننصح بالتعامل معهم.',
     name: 'زينب النور',
-    role: 'مديرة عمليات — مجموعة صناعية، أم درمان',
+    role: 'مديرة عمليات',
   },
   {
     text: 'قدمت الشركة حلول بنية تحتية متكاملة لمركز البيانات لدينا. الاحترافية والالتزام بالمعايير كانا واضحين من اليوم الأول.',
     name: 'مأمون التاج',
-    role: 'مدير تقنية المعلومات — مصرف، الخرطوم',
+    role: 'مدير تقنية المعلومات',
   },
   {
     text: 'تجربة رائعة من ناحية تصميم الموقع والاستجابة. فريق يفهّم احتياجات العميل ويترجمها إلى حلول عملية وأنيقة.',
     name: 'عائشة دفع الله',
-    role: 'مالكة مشروع تجاري — الخرطوم بحري',
+    role: 'مالكة مشروع تجاري',
   },
   {
     text: 'أنظمة الحضور والانصراف وتتبع المركبات التي زودتنا بها الشركة تعمل بدقة وتوفر علينا وقتاً وجهداً كبيرين.',
     name: 'عبد الرحمن محمود',
-    role: 'مدير موارد بشرية — شركة نقل، بورتسودان',
+    role: 'مدير موارد بشرية',
   },
   {
     text: 'شريك موثوق في التحول الرقمي. نتعامل معهم منذ سنوات ونوصي بهم لكل من يبحث عن جودة وشفافية في التنفيذ.',

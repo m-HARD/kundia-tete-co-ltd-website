@@ -31,16 +31,16 @@
         />
 
         <div class="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl lg:text-6xl">
+          <h1 class="text-5xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-6xl lg:text-6xl">
             شريكك الاستراتيجي في التحول الرقمي
           </h1>
-          <p class="mx-auto mt-20 max-w-2xl text-xl leading-relaxed text-gray-600 opacity-90 dark:text-gray-300 sm:text-2xl">
+          <p class="mx-auto mt-20 max-w-2xl text-xl leading-loose text-gray-600 opacity-90 dark:text-gray-300 sm:text-2xl sm:leading-loose">
             في عالم تتسارع فيه التغيرات، تنطلق «كنديا تيتي المحدودة» برؤية طموحة مستوحاة من
             ديناميكية التكنولوجيا الحديثة وآفاق الطيران. نحن لا نقدم مجرد برمجيات، بل نكرس جهودنا
             لدمج التكنولوجيا المتقدمة مع الفهم العميق لاحتياجات العمل، لنضع بين يديك حلولاً متكاملة
             تصنع الفارق.
           </p>
-          <p class="mt-8 text-2xl font-medium text-primary-600 dark:text-primary-400">
+          <p class="mt-8 text-2xl font-medium leading-relaxed text-primary-600 dark:text-primary-400">
             كنديا تيتي المحدودة — دعنا نبدأ الرحلة معاً.
           </p>
           <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -67,16 +67,16 @@
         id="partners"
         class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
       >
-        <h2 class="text-center text-4xl font-bold text-gray-900 dark:text-gray-100 sm:text-5xl">
+        <h2 class="text-center text-4xl font-bold leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl">
           يثق بنا شركاء رائعون
         </h2>
-        <p class="mx-auto mt-10 max-w-xl text-center text-lg text-gray-600 opacity-80 dark:text-gray-400">
+        <p class="mx-auto mt-10 max-w-xl text-center text-lg leading-loose text-gray-600 opacity-80 dark:text-gray-400">
           نتعاون مع أفضل الجهات والشركات في مختلف القطاعات.
         </p>
         <div class="mt-12 flex flex-wrap items-center justify-center gap-8 text-gray-500 opacity-70 dark:text-gray-400">
-          <span class="text-base font-medium">شركاء وعملاء متميزون</span>
+          <span class="text-base font-medium leading-relaxed">شركاء وعملاء متميزون</span>
           <span class="hidden sm:inline">•</span>
-          <span class="text-base">مجموعة متميزة من العملاء في القطاعين العام والخاص</span>
+          <span class="text-base leading-relaxed">مجموعة متميزة من العملاء في القطاعين العام والخاص</span>
         </div>
       </section>
 
@@ -109,10 +109,10 @@
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div v-for="(stat, idx) in stats" :key="stat.label" class="text-center">
-              <div class="text-4xl font-bold tabular-nums text-gray-900 sm:text-5xl dark:text-gray-100">
+              <div class="text-4xl font-bold leading-none tabular-nums text-gray-900 sm:text-5xl dark:text-gray-100">
                 <span>{{ stat.display }} </span>{{ stat.suffix }}
               </div>
-              <div class="mt-2 text-base font-medium text-gray-700 dark:text-gray-400">
+              <div class="mt-2 text-lg font-medium leading-relaxed text-gray-700 dark:text-gray-400">
                 {{ stat.label }}
               </div>
             </div>
@@ -127,10 +127,10 @@
         id="services-preview"
         class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
       >
-        <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+        <h2 class="text-center text-3xl font-bold leading-tight text-gray-900 dark:text-white sm:text-4xl">
           خدماتنا
         </h2>
-        <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
+        <p class="mx-auto mt-3 max-w-2xl text-center text-lg leading-loose text-gray-600 dark:text-gray-400">
           نقدم مجموعة متكاملة من الخدمات التقنية
         </p>
         <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" dir="rtl">
@@ -158,10 +158,10 @@
               >
                 {{ svc.icon }}
               </span>
-              <h3 class="mt-4 text-xl font-bold text-gray-900 dark:text-white">
+              <h3 class="mt-4 text-xl font-bold leading-snug text-gray-900 dark:text-white">
                 {{ svc.title }}
               </h3>
-              <p class="mt-2 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-400">
+              <p class="mt-2 flex-1 text-base leading-loose text-gray-600 dark:text-gray-400 sm:text-lg">
                 {{ svc.desc }}
               </p>
             </div>
@@ -205,10 +205,10 @@
         />
 
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
+          <h2 class="text-center text-3xl font-bold leading-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
             آراء عملائنا
           </h2>
-          <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
+          <p class="mx-auto mt-3 max-w-2xl text-center text-lg leading-loose text-gray-600 dark:text-gray-400">
             اكتشف ما يقوله عملاؤنا عنا
           </p>
           <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" dir="rtl">
@@ -236,16 +236,16 @@
                 >
                   "
                 </span>
-                <p class="mt-2 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                <p class="mt-2 flex-1 text-base leading-loose text-gray-600 dark:text-gray-300 sm:text-lg">
                   {{ item.text }}
                 </p>
                 <!-- اسم ومنصب صاحب التعليق مع النجوم مقابلهم -->
                 <div class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-gray-200 pt-4 dark:border-gray-600">
                   <div>
-                    <p class="font-semibold text-gray-900 dark:text-white">
+                    <p class="text-lg font-semibold leading-snug text-gray-900 dark:text-white">
                       {{ item.name }}
                     </p>
-                    <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
+                    <p class="mt-0.5 text-base leading-relaxed text-gray-500 dark:text-gray-400">
                       {{ item.role }}
                     </p>
                   </div>
@@ -274,10 +274,10 @@
       >
         <div class="pointer-events-none absolute inset-0 dark:bg-black/10" aria-hidden="true" />
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+          <h2 class="text-center text-3xl font-bold leading-tight text-gray-900 dark:text-white sm:text-4xl">
             الأسئلة الشائعة
           </h2>
-          <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
+          <p class="mx-auto mt-3 max-w-2xl text-center text-lg leading-loose text-gray-600 dark:text-gray-400">
             كل ما تحتاج معرفته قبل أن نبدأ.
           </p>
           <div class="mt-12 space-y-3">
@@ -294,7 +294,7 @@
                 :id="'faq-question-' + i"
                 @click="faqOpenIndex = faqOpenIndex === i ? null : i"
               >
-                <span class="text-lg font-medium text-gray-900 dark:text-gray-100">
+                <span class="text-lg font-medium leading-snug text-gray-900 dark:text-gray-100 sm:text-xl">
                   {{ item.question }}
                 </span>
                 <span
@@ -314,7 +314,7 @@
                 class="border-t border-gray-200/70 bg-gray-100/80 dark:border-gray-600/50 dark:bg-gray-800/60"
                 :hidden="faqOpenIndex !== i"
               >
-                <p class="px-5 py-4 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                <p class="px-5 py-4 text-base leading-loose text-gray-600 dark:text-gray-300 sm:text-lg">
                   {{ item.answer }}
                 </p>
               </div>
@@ -348,15 +348,15 @@
           class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/90"
             aria-hidden="true"
         />
-        <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
           <div
-            class="relative rounded-4xl bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
+            class="relative mx-auto max-w-4xl rounded-4xl bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
           >
-            <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
+            <h2 class="text-3xl font-bold leading-tight text-primary-800 sm:text-4xl dark:text-primary-900">
               جاهز لبناء شيء مميز؟
             </h2>
-            <p class="mx-auto mt-4 max-w-xl text-xl text-primary-700 dark:text-primary-800">
+            <p class="mx-auto mt-4 max-w-xl text-xl leading-loose text-primary-700 dark:text-primary-800">
               شاركنا تفاصيل مشروعك وسنتواصل معك.
             </p>
             <Link
@@ -393,6 +393,10 @@ const faqItems = ref([
   { question: 'ما هي طرق الدفع المتاحة؟', answer: 'نقبل التحويل البنكي، مدى، Apple Pay، وبطاقات الائتمان. يمكن الدفع على مراحل حسب حجم المشروع.' },
   { question: 'هل هناك دفعة مقدمة؟', answer: 'نعم، عادة نطلب 30-50% دفعة مقدمة لبدء العمل، والباقي عند التسليم أو على مراحل.' },
   { question: 'كيف يمكنني التواصل معكم؟', answer: 'يمكنك التواصل عبر نموذج الاتصال، البريد الإلكتروني، الواتساب، أو الاتصال المباشر. نرد خلال 24 ساعة.' },
+  { question: 'كم تستغرق مدة تطوير الموقع؟', answer: 'تعتمد المدة على حجم وتعقيد المشروع، عادة من 2–8 أسابيع للمواقع المتوسطة.' },
+  { question: 'هل تقدمون أنظمة مراقبة وإنذار؟', answer: 'نعم، نقدم أنظمة مراقبة مرئية (CCTV) وأنظمة إنذار ضد الحريق والاختراق مع تركيب وصيانة.' },
+  { question: 'هل تقدمون حلول البيت الذكي؟', answer: 'نعم، نقدم حلول إنارة ذكية وتحكم بالمنزل والإنتركم، قابلة للتكامل مع أجهزتك الحالية.' },
+  { question: 'هل تقدمون خدمة تتبع المركبات؟', answer: 'نعم، نقدم حلول تتبع وإدارة أسطول المركبات بدقة مع تقارير وخرائط وتنبيهات.' },
 ]);
 
 const stats = ref([
@@ -453,7 +457,7 @@ const testimonials = ref([
   },
   {
     text: 'تجربة رائعة من ناحية تصميم الموقع والاستجابة. فريق يفهّم احتياجات العميل ويترجمها إلى حلول عملية وأنيقة.',
-    name: 'عائشة الدفع',
+    name: 'عائشة دفع الله',
     role: 'مالكة مشروع تجاري — الخرطوم بحري',
   },
   {
@@ -464,7 +468,7 @@ const testimonials = ref([
   {
     text: 'شريك موثوق في التحول الرقمي. نتعامل معهم منذ سنوات ونوصي بهم لكل من يبحث عن جودة وشفافية في التنفيذ.',
     name: 'مريم عثمان',
-    role: 'مديرة تطوير أعمال — مؤسسة استشارية، الخرطوم',
+    role: 'مديرة تطوير أعمال',
   },
 ]);
 

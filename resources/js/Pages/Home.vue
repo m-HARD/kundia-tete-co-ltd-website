@@ -282,7 +282,7 @@
             <div
               v-for="(item, i) in faqItems"
               :key="i"
-              class="card-bg-transparent overflow-hidden rounded-xl border border-gray-200/70 dark:border-gray-600/50"
+              class="card-bg-transparent overflow-hidden rounded-xl border border-gray-200/70 dark:border-gray-600/50 shadow"
             >
               <button
                 type="button"

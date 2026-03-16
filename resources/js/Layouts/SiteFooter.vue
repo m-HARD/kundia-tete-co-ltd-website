@@ -6,7 +6,7 @@
     <div class="pointer-events-none absolute inset-0 dark:bg-black/10" aria-hidden="true" />
     <div class="relative z-10 mx-auto w-full max-w-7xl px-4 py-12 text-gray-900 dark:text-gray-100 sm:px-6 lg:px-8">
       <!-- شبكة الأعمدة الرئيسية — تغطي كامل العرض 7xl مع توسيع المسافات بين الأعمدة -->
-      <div class="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-x-16 lg:gap-y-10">
+      <div class="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-16 lg:gap-y-10">
         <!-- العمود الأول: الشعار ومعلومات الاتصال -->
         <div class="sm:col-span-2 lg:col-span-1 lg:min-w-0">
           <Link href="/" class="inline-flex items-center gap-2">

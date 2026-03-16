@@ -145,10 +145,8 @@
               aria-hidden="true"
             >
               <div class="absolute -top-6 -inset-e-6 h-24 w-24 rounded-full border-2 border-primary-400/50 shadow-[0_0_50px_25px_rgba(210,180,140,0.35),0_0_90px_40px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(210,180,140,0.72),0_0_90px_40px_rgba(210,180,140,0.42)]" />
-              <div class="absolute -bottom-4 -inset-s-4 h-20 w-20 rounded-full border-2 border-primary-400/50 shadow-[0_0_40px_20px_rgba(210,180,140,0.35),0_0_70px_35px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(210,180,140,0.68),0_0_70px_35px_rgba(210,180,140,0.5)]" />
-              <div class="absolute inset-e-1/2 top-1/2 h-16 w-16 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_35px_18px_rgba(232,221,200,0.3),0_0_65px_30px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(232,221,200,0.55),0_0_65px_30px_rgba(210,180,140,0.4)]" />
             </div>
-            <div class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/90" aria-hidden="true" />
+            <div class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/85" aria-hidden="true" />
             <div class="relative z-10 flex flex-1 flex-col">
               <!-- أيقونة في الطرف (RTL) مع توهج لون أساسي -->
               <span
@@ -222,10 +220,8 @@
                 aria-hidden="true"
               >
                 <div class="absolute -top-6 -inset-e-6 h-24 w-24 rounded-full border-2 border-primary-400/50 shadow-[0_0_50px_25px_rgba(210,180,140,0.35),0_0_90px_40px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(210,180,140,0.72),0_0_90px_40px_rgba(210,180,140,0.42)]" />
-                <div class="absolute -bottom-4 -inset-s-4 h-20 w-20 rounded-full border-2 border-primary-400/50 shadow-[0_0_40px_20px_rgba(210,180,140,0.35),0_0_70px_35px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(210,180,140,0.68),0_0_70px_35px_rgba(210,180,140,0.5)]" />
-                <div class="absolute inset-e-1/2 top-1/2 h-16 w-16 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_35px_18px_rgba(232,221,200,0.3),0_0_65px_30px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(232,221,200,0.55),0_0_65px_30px_rgba(210,180,140,0.4)]" />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gray-900/20 dark:bg-black/90" aria-hidden="true" />
+              <div class="pointer-events-none absolute inset-0 bg-gray-900/20 dark:bg-black/85" aria-hidden="true" />
               <div class="relative z-10 flex flex-1 flex-col">
                 <!-- أيقونة الاقتباس -->
                 <span

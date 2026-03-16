@@ -67,10 +67,10 @@
         id="partners"
         class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
       >
-        <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
+        <h2 class="text-center text-4xl font-bold text-gray-900 dark:text-gray-100 sm:text-5xl">
           يثق بنا شركاء رائعون
         </h2>
-        <p class="mx-auto mt-3 max-w-xl text-center text-lg text-gray-600 opacity-80 dark:text-gray-400">
+        <p class="mx-auto mt-10 max-w-xl text-center text-lg text-gray-600 opacity-80 dark:text-gray-400">
           نتعاون مع أفضل الجهات والشركات في مختلف القطاعات.
         </p>
         <div class="mt-12 flex flex-wrap items-center justify-center gap-8 text-gray-500 opacity-70 dark:text-gray-400">
@@ -110,7 +110,7 @@
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div v-for="(stat, idx) in stats" :key="stat.label" class="text-center">
               <div class="text-4xl font-bold tabular-nums text-gray-900 sm:text-5xl dark:text-gray-100">
-                <span>{{ stat.display }}</span>{{ stat.suffix }}
+                <span>{{ stat.display }} </span>{{ stat.suffix }}
               </div>
               <div class="mt-2 text-base font-medium text-gray-700 dark:text-gray-400">
                 {{ stat.label }}
@@ -131,7 +131,7 @@
           خدماتنا
         </h2>
         <p class="mx-auto mt-3 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
-          نقدم مجموعة متكاملة من الخدمات التقنية.
+          نقدم مجموعة متكاملة من الخدمات التقنية
         </p>
         <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" dir="rtl">
           <Link
@@ -172,8 +172,8 @@
             href="/services"
             class="inline-flex items-center rounded-xl bg-primary-600 px-6 py-3 text-lg font-medium text-white shadow-md transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
           >
-            عرض الكل
             <span class="me-2" aria-hidden="true">←</span>
+            عرض الكل
           </Link>
         </div>
       </section>
@@ -351,7 +351,7 @@
         <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <!-- البطاقة: خلفية باللون الأساسي، زوايا دائرية كبيرة -->
           <div
-            class="relative rounded-[2rem] bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
+            class="relative rounded-4xl bg-primary-200/90 px-8 py-12 text-center shadow-xl dark:bg-primary-500 dark:shadow-2xl sm:px-14 sm:py-16"
           >
             <h2 class="text-3xl font-bold text-primary-800 sm:text-4xl dark:text-primary-900">
               جاهز لبناء شيء مميز؟
@@ -396,10 +396,10 @@ const faqItems = ref([
 ]);
 
 const stats = ref([
-  { value: 50, display: 0, suffix: '+', label: 'مشروع' },
-  { value: 20, display: 0, suffix: '+', label: 'عميل' },
-  { value: 5, display: 0, suffix: '+', label: 'سنوات خبرة' },
-  { value: 24, display: '24', suffix: '/7', label: 'دعم' },
+  { value: 30, display: 0, suffix: ' +', label: 'مشروع' },
+  { value: 20, display: 0, suffix: ' +', label: 'عميل' },
+  { value: 2, display: 0, suffix: ' +', label: 'سنوات خبرة' },
+  { value: 24, display: '24', suffix: ' /7', label: 'دعم' },
 ]);
 
 const servicesPreview = ref([
@@ -438,33 +438,33 @@ const servicesPreview = ref([
 const testimonials = ref([
   {
     text: 'فريق محترف ومتعاون، أنجزوا مشروعنا في الوقت المحدد وبجودة عالية جداً. التواصل معهم كان سلساً والنتائج فاقت توقعاتنا.',
-    name: 'أحمد الغامدي',
-    role: 'مدير تنفيذي — شركة التقنية المتقدمة',
+    name: 'صالح بابكر',
+    role: 'مدير تنفيذي — شركة تقنية، الخرطوم',
   },
   {
     text: 'تعاملنا مع كنديا تيتي لتنفيذ أنظمة المراقبة والإنذار. الخدمة ممتازة والدعم الفني متواصل. ننصح بالتعامل معهم.',
-    name: 'سارة محمد',
-    role: 'مديرة العمليات — مجموعة صناعية',
+    name: 'زينب النور',
+    role: 'مديرة عمليات — مجموعة صناعية، أم درمان',
   },
   {
     text: 'قدمت الشركة حلول بنية تحتية متكاملة لمركز البيانات لدينا. الاحترافية والالتزام بالمعايير كانا واضحين من اليوم الأول.',
-    name: 'خالد العتيبي',
-    role: 'مدير تقنية المعلومات',
+    name: 'مأمون التاج',
+    role: 'مدير تقنية المعلومات — مصرف، الخرطوم',
   },
   {
     text: 'تجربة رائعة من ناحية تصميم الموقع والاستجابة. فريق يفهّم احتياجات العميل ويترجمها إلى حلول عملية وأنيقة.',
-    name: 'نورة الشمري',
-    role: 'مالكة مشروع تجاري',
+    name: 'عائشة الدفع',
+    role: 'مالكة مشروع تجاري — الخرطوم بحري',
   },
   {
     text: 'أنظمة الحضور والانصراف وتتبع المركبات التي زودتنا بها الشركة تعمل بدقة وتوفر علينا وقتاً وجهداً كبيرين.',
-    name: 'عمر حسن',
-    role: 'مدير الموارد البشرية — شركة نقل',
+    name: 'عبد الرحمن محمود',
+    role: 'مدير موارد بشرية — شركة نقل، بورتسودان',
   },
   {
     text: 'شريك موثوق في التحول الرقمي. نتعامل معهم منذ سنوات ونوصي بهم لكل من يبحث عن جودة وشفافية في التنفيذ.',
-    name: 'فاطمة عبدالله',
-    role: 'مديرة تطوير أعمال',
+    name: 'مريم عثمان',
+    role: 'مديرة تطوير أعمال — مؤسسة استشارية، الخرطوم',
   },
 ]);
 

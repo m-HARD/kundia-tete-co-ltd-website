@@ -1,14 +1,10 @@
 <template>
   <footer
     dir="rtl"
-    class="mt-auto border-t transition-colors duration-300"
-    :class="
-      dark
-        ? 'border-gray-700 bg-gray-900'
-        : 'border-gray-200 bg-gray-50'
-    "
+    class="section-bg-transparent mt-auto w-full overflow-hidden border-t border-gray-200 bg-gray-50 transition-colors duration-300 dark:border-gray-600"
   >
-    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="pointer-events-none absolute inset-0 dark:bg-black/10" aria-hidden="true" />
+    <div class="relative z-10 mx-auto max-w-7xl px-4 py-8 text-gray-900 dark:text-gray-100 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
         <div class="flex items-center gap-2">
           <LogoPlaceholder />

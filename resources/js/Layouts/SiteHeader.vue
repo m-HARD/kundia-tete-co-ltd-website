@@ -1,14 +1,10 @@
 <template>
   <header
     dir="rtl"
-    class="sticky top-0 z-50 border-b transition-colors duration-300"
-    :class="
-      dark
-        ? 'border-gray-700 bg-gray-900/95 backdrop-blur'
-        : 'border-gray-200 bg-white/95 backdrop-blur'
-    "
+    class="section-bg-transparent sticky top-0 z-50 w-full overflow-hidden border-b border-gray-200 bg-gray-50 transition-colors duration-300 backdrop-blur dark:border-gray-600"
   >
-    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <div class="pointer-events-none absolute inset-0 dark:bg-black/10" aria-hidden="true" />
+    <div class="relative z-10 mx-auto flex h-16 max-w-7xl items-center justify-between px-4 text-gray-900 dark:text-gray-100 sm:px-6 lg:px-8">
       <!-- الشعار واسم الشركة -->
       <Link href="/" class="flex items-center gap-2">
         <LogoPlaceholder />

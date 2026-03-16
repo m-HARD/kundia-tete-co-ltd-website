@@ -14,19 +14,19 @@
           class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
           aria-hidden="true"
         >
-          <!-- في الوضع الفاتح: دوائر حدود خفيفة -->
-          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
-          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
-          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <!-- في الوضع الفاتح والداكن: دوائر بتوهج وحد مضيء -->
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-400/50 shadow-[0_0_140px_70px_rgba(210,180,140,0.4),0_0_200px_90px_rgba(245,238,228,0.25),0_0_280px_120px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/50 shadow-[0_0_120px_55px_rgba(210,180,140,0.38),0_0_160px_70px_rgba(255,250,240,0.22),0_0_240px_100px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_100px_50px_rgba(232,221,200,0.35),0_0_140px_60px_rgba(255,252,245,0.22),0_0_220px_90px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border-2 border-primary-400/50 shadow-[0_0_90px_45px_rgba(210,180,140,0.35),0_0_180px_80px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border-2 border-primary-400/50 shadow-[0_0_80px_40px_rgba(245,238,228,0.3),0_0_160px_70px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border-2 border-primary-400/50 shadow-[0_0_70px_35px_rgba(210,180,140,0.35),0_0_150px_60px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border-2 border-primary-400/50 shadow-[0_0_75px_38px_rgba(232,221,200,0.35),0_0_160px_70px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
         </div>
 
         <!-- طبقة شفافة خفيفة في الوضع الداكن -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/80"
+          class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/80"
           aria-hidden="true"
         />
 
@@ -93,17 +93,15 @@
           class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
           aria-hidden="true"
         >
-          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
-          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
-          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-400/50 shadow-[0_0_140px_70px_rgba(210,180,140,0.4),0_0_200px_90px_rgba(245,238,228,0.25),0_0_280px_120px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/50 shadow-[0_0_120px_55px_rgba(210,180,140,0.38),0_0_160px_70px_rgba(255,250,240,0.22),0_0_240px_100px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_100px_50px_rgba(232,221,200,0.35),0_0_140px_60px_rgba(255,252,245,0.22),0_0_220px_90px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border-2 border-primary-400/50 shadow-[0_0_90px_45px_rgba(210,180,140,0.35),0_0_180px_80px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border-2 border-primary-400/50 shadow-[0_0_70px_35px_rgba(210,180,140,0.35),0_0_150px_60px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
         </div>
         <!-- طبقة شفافية خفيفة (نفس الهيرو) -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/80"
+          class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/80"
           aria-hidden="true"
         />
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -146,11 +144,11 @@
               class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
               aria-hidden="true"
             >
-              <div class="absolute -top-6 -inset-e-6 h-24 w-24 rounded-full border-2 border-primary-400/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(210,180,140,0.72),0_0_90px_40px_rgba(210,180,140,0.42)]" />
-              <div class="absolute -bottom-4 -inset-s-4 h-20 w-20 rounded-full border-2 border-primary-500/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(210,180,140,0.68),0_0_70px_35px_rgba(210,180,140,0.5)]" />
-              <div class="absolute inset-e-1/2 top-1/2 h-16 w-16 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(232,221,200,0.55),0_0_65px_30px_rgba(210,180,140,0.4)]" />
+              <div class="absolute -top-6 -inset-e-6 h-24 w-24 rounded-full border-2 border-primary-400/50 shadow-[0_0_50px_25px_rgba(210,180,140,0.35),0_0_90px_40px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(210,180,140,0.72),0_0_90px_40px_rgba(210,180,140,0.42)]" />
+              <div class="absolute -bottom-4 -inset-s-4 h-20 w-20 rounded-full border-2 border-primary-400/50 shadow-[0_0_40px_20px_rgba(210,180,140,0.35),0_0_70px_35px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(210,180,140,0.68),0_0_70px_35px_rgba(210,180,140,0.5)]" />
+              <div class="absolute inset-e-1/2 top-1/2 h-16 w-16 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_35px_18px_rgba(232,221,200,0.3),0_0_65px_30px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(232,221,200,0.55),0_0_65px_30px_rgba(210,180,140,0.4)]" />
             </div>
-            <div class="pointer-events-none absolute inset-0 bg-gray-900/10 dark:bg-black/90" aria-hidden="true" />
+            <div class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/90" aria-hidden="true" />
             <div class="relative z-10 flex flex-1 flex-col">
               <!-- أيقونة في الطرف (RTL) مع توهج لون أساسي -->
               <span
@@ -189,18 +187,18 @@
           class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
           aria-hidden="true"
         >
-          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
-          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
-          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-400/50 shadow-[0_0_140px_70px_rgba(210,180,140,0.4),0_0_200px_90px_rgba(245,238,228,0.25),0_0_280px_120px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/50 shadow-[0_0_120px_55px_rgba(210,180,140,0.38),0_0_160px_70px_rgba(255,250,240,0.22),0_0_240px_100px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_100px_50px_rgba(232,221,200,0.35),0_0_140px_60px_rgba(255,252,245,0.22),0_0_220px_90px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border-2 border-primary-400/50 shadow-[0_0_90px_45px_rgba(210,180,140,0.35),0_0_180px_80px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border-2 border-primary-400/50 shadow-[0_0_80px_40px_rgba(245,238,228,0.3),0_0_160px_70px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border-2 border-primary-400/50 shadow-[0_0_70px_35px_rgba(210,180,140,0.35),0_0_150px_60px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border-2 border-primary-400/50 shadow-[0_0_75px_38px_rgba(232,221,200,0.35),0_0_160px_70px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
         </div>
 
         <!-- طبقة شفافية خفيفة (نفس الهيرو) -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/80"
+          class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/80"
           aria-hidden="true"
         />
 
@@ -223,11 +221,11 @@
                 class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
                 aria-hidden="true"
               >
-                <div class="absolute -top-6 -inset-e-6 h-24 w-24 rounded-full border-2 border-primary-400/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(210,180,140,0.72),0_0_90px_40px_rgba(210,180,140,0.42)]" />
-                <div class="absolute -bottom-4 -inset-s-4 h-20 w-20 rounded-full border-2 border-primary-500/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(210,180,140,0.68),0_0_70px_35px_rgba(210,180,140,0.5)]" />
-                <div class="absolute inset-e-1/2 top-1/2 h-16 w-16 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(232,221,200,0.55),0_0_65px_30px_rgba(210,180,140,0.4)]" />
+                <div class="absolute -top-6 -inset-e-6 h-24 w-24 rounded-full border-2 border-primary-400/50 shadow-[0_0_50px_25px_rgba(210,180,140,0.35),0_0_90px_40px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(210,180,140,0.72),0_0_90px_40px_rgba(210,180,140,0.42)]" />
+                <div class="absolute -bottom-4 -inset-s-4 h-20 w-20 rounded-full border-2 border-primary-400/50 shadow-[0_0_40px_20px_rgba(210,180,140,0.35),0_0_70px_35px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(210,180,140,0.68),0_0_70px_35px_rgba(210,180,140,0.5)]" />
+                <div class="absolute inset-e-1/2 top-1/2 h-16 w-16 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_35px_18px_rgba(232,221,200,0.3),0_0_65px_30px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(232,221,200,0.55),0_0_65px_30px_rgba(210,180,140,0.4)]" />
               </div>
-              <div class="pointer-events-none absolute inset-0 bg-gray-900/10 dark:bg-black/90" aria-hidden="true" />
+              <div class="pointer-events-none absolute inset-0 bg-gray-900/20 dark:bg-black/90" aria-hidden="true" />
               <div class="relative z-10 flex flex-1 flex-col">
                 <!-- أيقونة الاقتباس -->
                 <span
@@ -335,17 +333,17 @@
           class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
           aria-hidden="true"
         >
-          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
-          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
-          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-400/50 shadow-[0_0_140px_70px_rgba(210,180,140,0.4),0_0_200px_90px_rgba(245,238,228,0.25),0_0_280px_120px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/50 shadow-[0_0_120px_55px_rgba(210,180,140,0.38),0_0_160px_70px_rgba(255,250,240,0.22),0_0_240px_100px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_100px_50px_rgba(232,221,200,0.35),0_0_140px_60px_rgba(255,252,245,0.22),0_0_220px_90px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border-2 border-primary-400/50 shadow-[0_0_90px_45px_rgba(210,180,140,0.35),0_0_180px_80px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border-2 border-primary-400/50 shadow-[0_0_80px_40px_rgba(245,238,228,0.3),0_0_160px_70px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border-2 border-primary-400/50 shadow-[0_0_70px_35px_rgba(210,180,140,0.35),0_0_150px_60px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border-2 border-primary-400/50 shadow-[0_0_75px_38px_rgba(232,221,200,0.35),0_0_160px_70px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
         </div>
         <!-- طبقة شفافية خفيفة (نفس الهيرو) -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/80"
+          class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/80"
             aria-hidden="true"
         />
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -493,23 +491,23 @@
           class="pointer-events-none absolute inset-0 overflow-hidden opacity-100 dark:opacity-100"
           aria-hidden="true"
         >
-          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-500/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
-          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/30 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
-          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border border-primary-500/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border border-primary-400/25 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
-          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border border-primary-300/20 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/2 -inset-s-12 h-52 w-52 rounded-full border border-primary-400/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_60px_30px_rgba(210,180,140,0.5),0_0_110px_50px_rgba(210,180,140,0.4)]" />
-          <div class="absolute bottom-1/4 -inset-e-12 h-44 w-44 rounded-full border border-primary-500/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(245,238,228,0.6),0_0_90px_40px_rgba(210,180,140,0.5)]" />
-          <div class="absolute top-1/3 -inset-e-1/3 h-36 w-36 rounded-full border border-primary-300/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_45px_22px_rgba(232,221,200,0.58)]" />
-          <div class="absolute bottom-1/2 inset-e-1/4 h-48 w-48 rounded-full border border-primary-400/12 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_55px_28px_rgba(210,180,140,0.5),0_0_100px_45px_rgba(210,180,140,0.4)]" />
-          <div class="absolute top-2/3 inset-s-1/3 h-32 w-32 rounded-full border border-primary-500/15 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(245,238,228,0.5)]" />
-          <div class="absolute top-1/6 inset-s-1/4 h-28 w-28 rounded-full border border-primary-300/12 dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(210,180,140,0.5),0_0_70px_32px_rgba(210,180,140,0.4)]" />
+          <div class="absolute -top-24 -inset-e-24 h-96 w-96 rounded-full border-2 border-primary-400/50 shadow-[0_0_140px_70px_rgba(210,180,140,0.4),0_0_200px_90px_rgba(245,238,228,0.25),0_0_280px_120px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_140px_70px_rgba(210,180,140,0.72),0_0_200px_90px_rgba(245,238,228,0.58),0_0_280px_120px_rgba(210,180,140,0.4)]" />
+          <div class="absolute -bottom-24 -inset-s-24 h-80 w-80 rounded-full border-2 border-primary-400/50 shadow-[0_0_120px_55px_rgba(210,180,140,0.38),0_0_160px_70px_rgba(255,250,240,0.22),0_0_240px_100px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_120px_55px_rgba(210,180,140,0.68),0_0_160px_70px_rgba(255,250,240,0.52),0_0_240px_100px_rgba(210,180,140,0.5)]" />
+          <div class="absolute inset-s-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary-400/50 shadow-[0_0_100px_50px_rgba(232,221,200,0.35),0_0_140px_60px_rgba(255,252,245,0.22),0_0_220px_90px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_100px_50px_rgba(232,221,200,0.72),0_0_140px_60px_rgba(255,252,245,0.58),0_0_220px_90px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/4 inset-e-1/4 h-72 w-72 rounded-full border-2 border-primary-400/50 shadow-[0_0_90px_45px_rgba(210,180,140,0.35),0_0_180px_80px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_90px_45px_rgba(210,180,140,0.68),0_0_180px_80px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/3 inset-s-1/3 h-56 w-56 rounded-full border-2 border-primary-400/50 shadow-[0_0_80px_40px_rgba(245,238,228,0.3),0_0_160px_70px_rgba(210,180,140,0.18)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_80px_40px_rgba(245,238,228,0.62),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/3 inset-s-1/4 h-40 w-40 rounded-full border-2 border-primary-400/50 shadow-[0_0_70px_35px_rgba(210,180,140,0.35),0_0_150px_60px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_70px_35px_rgba(210,180,140,0.5),0_0_150px_60px_rgba(210,180,140,0.5)]" />
+          <div class="absolute bottom-1/4 inset-e-1/3 h-48 w-48 rounded-full border-2 border-primary-400/50 shadow-[0_0_75px_38px_rgba(232,221,200,0.35),0_0_160px_70px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_75px_38px_rgba(232,221,200,0.7),0_0_160px_70px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/2 -inset-s-12 h-52 w-52 rounded-full border-2 border-primary-400/50 shadow-[0_0_60px_30px_rgba(210,180,140,0.35),0_0_110px_50px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_60px_30px_rgba(210,180,140,0.5),0_0_110px_50px_rgba(210,180,140,0.4)]" />
+          <div class="absolute bottom-1/4 -inset-e-12 h-44 w-44 rounded-full border-2 border-primary-400/50 shadow-[0_0_50px_25px_rgba(245,238,228,0.3),0_0_90px_40px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_50px_25px_rgba(245,238,228,0.6),0_0_90px_40px_rgba(210,180,140,0.5)]" />
+          <div class="absolute top-1/3 -inset-e-1/3 h-36 w-36 rounded-full border-2 border-primary-400/50 shadow-[0_0_45px_22px_rgba(232,221,200,0.32)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_45px_22px_rgba(232,221,200,0.58)]" />
+          <div class="absolute bottom-1/2 inset-e-1/4 h-48 w-48 rounded-full border-2 border-primary-400/50 shadow-[0_0_55px_28px_rgba(210,180,140,0.35),0_0_100px_45px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_55px_28px_rgba(210,180,140,0.5),0_0_100px_45px_rgba(210,180,140,0.4)]" />
+          <div class="absolute top-2/3 inset-s-1/3 h-32 w-32 rounded-full border-2 border-primary-400/50 shadow-[0_0_40px_20px_rgba(245,238,228,0.3)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_40px_20px_rgba(245,238,228,0.5)]" />
+          <div class="absolute top-1/6 inset-s-1/4 h-28 w-28 rounded-full border-2 border-primary-400/50 shadow-[0_0_35px_18px_rgba(210,180,140,0.35),0_0_70px_32px_rgba(210,180,140,0.2)] dark:border-2 dark:border-primary-400/70 dark:bg-transparent dark:shadow-[0_0_35px_18px_rgba(210,180,140,0.5),0_0_70px_32px_rgba(210,180,140,0.4)]" />
         </div>
         <!-- طبقة شفافية خفيفة في الوضع الداكن (نفس الهيرو) -->
         <div
-          class="pointer-events-none absolute inset-0 bg-gray-900/5 dark:bg-black/80"
+          class="pointer-events-none absolute inset-0 bg-gray-900/15 dark:bg-black/80"
           aria-hidden="true"
         />
         <div class="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
